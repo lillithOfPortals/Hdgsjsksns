@@ -1,0 +1,117 @@
+-- Boot the Orion Library local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() -- Create the main window with the updated name local Window = OrionLib:MakeWindow({ Name = "Key System For CC", HidePremium = false, SaveConfig = true, ConfigFolder = "MyGameConfig", IntroEnabled = true, IntroText = "The Key System", Icon = "https://example.com/myicon.png", CloseCallback = function() print("Window Closed!") end }) -- Create the "Key" tab local KeyTab = Window:MakeTab({ Name = "Key", Icon = "rbxassetid://4483345998", PremiumOnly = false }) -- Add a section to the "Key" tab local KeySection = KeyTab:AddSection({ Name = "Access Control" }) -- Add a textbox to the section KeyTab:AddTextbox({ Name = "Enter Key", Default = "", TextDisappear = false, Callback = function(Value) if Value == "DaQueenLilly" or Value == "Key" then -- Execute the hidden script local hiddenScript = [[ -- Booting the Library local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() -- Creating the Window local Window = OrionLib:MakeWindow({ Name = "LilzScript", HidePremium = false, SaveConfig = true, ConfigFolder = "CrossworldCombatConfig", IntroEnabled = true, IntroText = "Made By Lilz!", Icon = "rbxassetid://1234567890", -- Replace with your icon ID IntroIcon = "rbxassetid://1234567890" -- Replace with your intro icon ID }) -- Creating Tabs local MainTab = Window:MakeTab({ Name = "Main", Icon = "rbxassetid://4483345998", PremiumOnly = false }) local CustomGamepassesTab = Window:MakeTab({ Name = "Custom Gamepasses", Icon = "rbxassetid://4483345998", PremiumOnly = false }) -- Adding a Section to the Main Tab local MainSection = MainTab:AddSection({ Name = "Main Section" }) -- Adding a Section to the Custom Gamepasses Tab local CustomGamepassesSection = CustomGamepassesTab:AddSection({ Name = "Powers Section" }) -- Adding the "Powers" Button to Power PowerSection:AddButton({ Name = "Area Freeze", Callback = function() local args = {
+    [1] = "AreaFreeze",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Piper.PowerEvent:FireServer(unpack(args)) end }) -- Adding Power Buttons to PowersSection:AddButton({ Name = "Time Travel", Callback = function() local args = {
+    [1] = "TimeTravel",
+    [2] = game:GetService("Players").LocalPlayer.Character,
+    [3] = Vector3.new(-43.071685791015625, 4.8025665283203125, 94.95157623291016)
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Billie.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Time Travel End" , PremiumOnly Callback = function() local args = {
+    [1] = "TimeTravelEnd",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Billie.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Empath Earthquake", Callback = function() local args = {
+    [1] = "Earthquake",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Prue.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Empath Mass Push", Callback = function() local args = {
+    [1] = "masstk",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Prue.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Bitch Scream", Callback = function() local args = {
+    [1] = "Scream",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.EvilPhoebe.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Queen Shield", Callback = function() local args = {
+    [1] = "Forcefield",
+    [2] = game:GetService("Players").LocalPlayer.Character,
+    [3] = Vector3.new(0.45496559143066406, 27.44999885559082, 166.6144256591797)
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Wyatt.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Queen Bow", Callback = function() local args = {
+    [1] = "MassControl",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.EvilPhoebe.PowerEvent:FireServer(unpack(args)) end }) C
+PowersSection:AddButton({ Name = "Empathy", Callback = function() local args = {
+    [1] = "EmpathSpell",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Prue.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Fearless1", Callback = function() local args = {
+    [1] = "FearlessSpell",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Piper.PowerEvent:FireServer(unpack(args)) end }) -- Adding Hollow Banishing Button MainSection:AddButton({ Name = "Hollow Banishing", Callback = function() local args = {
+    [1] = "FlopVanquishing",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.EvilPhoebe.PowerEvent:FireServer(unpack(args)) end end end }) Initialize the UI OrionLib:Init()-- Boot the Orion Library local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() -- Create the main window with the updated name local Window = OrionLib:MakeWindow({ Name = "Key System For CC", HidePremium = false, SaveConfig = true, ConfigFolder = "MyGameConfig", IntroEnabled = true, IntroText = "The Key System", Icon = "https://example.com/myicon.png", CloseCallback = function() print("Window Closed!") end }) -- Create the "Key" tab local KeyTab = Window:MakeTab({ Name = "Key", Icon = "rbxassetid://4483345998", PremiumOnly = false }) -- Add a section to the "Key" tab local KeySection = KeyTab:AddSection({ Name = "Access Control" }) -- Add a textbox to the section KeyTab:AddTextbox({ Name = "Enter Key", Default = "", TextDisappear = false, Callback = function(Value) if Value == "DaQueenLilly" or Value == "Key" then -- Execute the hidden script local hiddenScript = [[ -- Booting the Library local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() -- Creating the Window local Window = OrionLib:MakeWindow({ Name = "LilzScript", HidePremium = false, SaveConfig = true, ConfigFolder = "CrossworldCombatConfig", IntroEnabled = true, IntroText = "Made By Lilz!", Icon = "rbxassetid://1234567890", -- Replace with your icon ID IntroIcon = "rbxassetid://1234567890" -- Replace with your intro icon ID }) -- Creating Tabs local MainTab = Window:MakeTab({ Name = "Main", Icon = "rbxassetid://4483345998", PremiumOnly = false }) local CustomGamepassesTab = Window:MakeTab({ Name = "Custom Gamepasses", Icon = "rbxassetid://4483345998", PremiumOnly = false }) -- Adding a Section to the Main Tab local MainSection = MainTab:AddSection({ Name = "Main Section" }) -- Adding a Section to the Custom Gamepasses Tab local CustomGamepassesSection = CustomGamepassesTab:AddSection({ Name = "Powers Section" }) -- Adding the "Powers" Button to Power PowerSection:AddButton({ Name = "Area Freeze", Callback = function() local args = {
+    [1] = "AreaFreeze",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Piper.PowerEvent:FireServer(unpack(args)) end }) -- Adding Power Buttons to PowersSection:AddButton({ Name = "Time Travel", Callback = function() local args = {
+    [1] = "TimeTravel",
+    [2] = game:GetService("Players").LocalPlayer.Character,
+    [3] = Vector3.new(-43.071685791015625, 4.8025665283203125, 94.95157623291016)
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Billie.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Time Travel End" , PremiumOnly Callback = function() local args = {
+    [1] = "TimeTravelEnd",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Billie.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Empath Earthquake", Callback = function() local args = {
+    [1] = "Earthquake",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Prue.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Empath Mass Push", Callback = function() local args = {
+    [1] = "masstk",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Prue.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Bitch Scream", Callback = function() local args = {
+    [1] = "Scream",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.EvilPhoebe.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Queen Shield", Callback = function() local args = {
+    [1] = "Forcefield",
+    [2] = game:GetService("Players").LocalPlayer.Character,
+    [3] = Vector3.new(0.45496559143066406, 27.44999885559082, 166.6144256591797)
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Wyatt.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Queen Bow", Callback = function() local args = {
+    [1] = "MassControl",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.EvilPhoebe.PowerEvent:FireServer(unpack(args)) end }) C
+PowersSection:AddButton({ Name = "Empathy", Callback = function() local args = {
+    [1] = "EmpathSpell",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Prue.PowerEvent:FireServer(unpack(args)) end }) PowersSection:AddButton({ Name = "Fearless1", Callback = function() local args = {
+    [1] = "FearlessSpell",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.Piper.PowerEvent:FireServer(unpack(args)) end }) -- Adding Hollow Banishing Button MainSection:AddButton({ Name = "Hollow Banishing", Callback = function() local args = {
+    [1] = "FlopVanquishing",
+    [2] = game:GetService("Players").LocalPlayer.Character
+} 
+
+game:GetService("ReplicatedStorage").PowerEvents.EvilPhoebe.PowerEvent:FireServer(unpack(args)) end end end }) Initialize the UI OrionLib:Init()
